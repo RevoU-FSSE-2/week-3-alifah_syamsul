@@ -40,6 +40,11 @@ header .overlay {
     padding: 20px;
 }
 
+/* Text shadow for the title */
+#title {
+    text-shadow: 4px 4px 8px #f9f9f9;
+}
+
 /* Navigation */
 nav ul li {
     list-style: none;
