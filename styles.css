@@ -81,21 +81,21 @@ main {
 
 /* Image Gallery */
 .image-gallery {
-    display: flex; 
-    overflow-x: auto;
-    gap: 1em;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
 }
 
 .image-gallery figure {
-    flex: 0 0 auto;
-    max-width: 300px;
+    width: 300px;
     height: auto;
 }
 
 .image-gallery img {
-    width: 100%;
+    width: 300px;
     height: auto;
-    min-height: 300px;
 }
 
 .image-gallery figcaption {
@@ -106,7 +106,7 @@ main {
 /* Videos */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -262,13 +262,13 @@ footer {
 
     /* Shows the image gallery as one grid column in mobile screens */
     .image-gallery {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
         overflow-x: hidden;
     }
 
     .image-gallery figure {
-        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 
     /* Display the hamburger menu when the screen is <768 px */
