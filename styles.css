@@ -40,10 +40,26 @@ header .overlay {
     padding: 20px;
 }
 
-/* Text shadow for the title */
+/* Text shadow, transition, & animation for the title */
 #title {
     text-shadow: 4px 4px 8px #f9f9f9;
-}
+    animation: slide-in 1s ease-in-out;
+    transition: color 0.3s ease-in-out;
+  }
+  
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  #title:hover {
+    color: #ffdab9;
+    text-shadow: 4px 4px 8px #ffdab9;
+  }
 
 /* Navigation */
 nav ul li {
