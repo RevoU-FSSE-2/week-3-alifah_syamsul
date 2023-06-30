@@ -1,6 +1,6 @@
 # RevoU-FSSE-2023H2 _ Alifah Syamsul _ W3 Intermediate & Advanced Assignment _ Mika Responsive Webpage + Improvements
 
-For this week's assignment, the previous week's webpage has been significantly improved with various responsive and interactive features. The additions have been made in line with the "Intermediate assignment" and the "Advanced assignment [requirements](https://docs.google.com/document/d/1gwIOahWejfvNr1Gf-6D1wkMb1ZozCbiXPKZHS_NYU-Y/edit?usp=sharing).
+For this week's assignment, the previous week's webpage has been significantly improved with various responsive and interactive features. The additions have been made in line with the "Intermediate assignment" and the "Advanced assignment" [requirements](https://docs.google.com/document/d/1gwIOahWejfvNr1Gf-6D1wkMb1ZozCbiXPKZHS_NYU-Y/edit?usp=sharing).
 
 ## Overview
 
