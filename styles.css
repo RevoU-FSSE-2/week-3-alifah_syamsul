@@ -98,7 +98,7 @@ nav ul li a {
     display: none;
     cursor: pointer;
     margin-right: auto;
-    padding-left: 1em;
+    padding-left: 0.5em;
 }
 
 .bar {
@@ -322,19 +322,19 @@ aside a {
 }
 
 /* Ticket form */
-#concert-ticket-form {
-    background: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
 #ticket-form {
-    max-width: 500px;
+    width: 75%;
+    max-width: 576px;
     margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    background-color: #f7f7f7;
+    color: #080808;
+    border-radius: 5px;
 }
 
 .form-field {
-    margin-bottom: 10px;
+    margin: 1em;
 }
 
 .form-field label {
@@ -349,13 +349,6 @@ aside a {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-}
-
-#ticket-form {
-    width: 400px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
 }
 
 #ticket-form label {
@@ -375,15 +368,23 @@ aside a {
 }
 
 #ticket-form input[type="number"] {
-    width: calc(100% - 20px);
+    width: calc(100% - 1em);
 }
 
 #ticket-form input[type="submit"] {
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #c5e3ec;
+    color: #00000D;
+    padding: 12px;
     border: none;
     border-radius: 5px;
+}
+
+#ticket-form #purchase-ticket {
+    background-color: #c5e3ec;
+    color: #00000D;
+    padding: 12px;
+    border: none;
 }
 
 #ticket-form fieldset {
@@ -394,20 +395,6 @@ aside a {
 
 #ticket-form legend {
     font-weight: bold;
-}
-
-button {
-    display: inline-block;
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #0056b3;
 }
 
 /* Footer */
@@ -491,4 +478,131 @@ footer {
         gap: 20px;
         padding: 20px;
     }
+
+    /* Limits the form width */
+    #ticket-form {
+        max-width: 576px;
+    }
+}
+
+/* Dark mode toggle */
+#dark-mode-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+body[data-theme="light"] #toggle-text {
+    color: #000;
+}
+
+body[data-theme="dark"] #toggle-text {
+    color: #f4f4f4;
+}
+
+body[data-theme="dark"] {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body[data-theme="dark"] a {
+    color: #f4f4f4;
+}
+
+body[data-theme="dark"] aside {
+    background: #666;
+}
+
+body[data-theme="dark"] header {
+    color: #333;
+}
+
+body[data-theme="dark"] footer {
+    background: #999;
+}
+
+body[data-theme="dark"] #ticket-form {
+    background-color: #080808;
+    background: #060606;
+    color: #f7f7f7;
+}
+
+body[data-theme="dark"] #ticket-form label, 
+body[data-theme="dark"] #ticket-form legend {
+    color: #f7f7f7;
+}
+
+body[data-theme="dark"] #ticket-form input,
+body[data-theme="dark"] #ticket-form textarea,
+body[data-theme="dark"] #ticket-form select {
+    background-color: #202020;
+    color: #f7f7f7;
+    border-color: #ffffff;
+}
+
+body[data-theme="dark"] #ticket-form fieldset {
+    border: 1px solid #333;
+    color: #f7f7f7;
+}
+
+body[data-theme="dark"] #ticket-form input[type="submit"] {
+    background-color: #00008d;
+    color: #f7f7ce;
+}
+
+body[data-theme="dark"] #ticket-form #purchase-ticket {
+    background-color: #00008d;
+    color: #f7f7ce;
+}
+
+.toggle-switch {
+    position: absolute;
+    right: 17.5px;
+    top: 10px;
+}
+
+.toggle-switch #toggle-text {
+    position: absolute;
+}
+
+.toggle-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.toggle-switch-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 26px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.toggle-switch-label::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label {
+    background: #4CAF50;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label::after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+
+.toggle-switch-label:active::after {
+    width: 35px;
 }
