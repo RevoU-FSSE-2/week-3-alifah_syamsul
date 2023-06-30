@@ -195,6 +195,118 @@ aside a {
     padding: 20px;
 }
 
+/* Image carousel */
+.carousel {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.carousel picture:nth-child(1) img {
+    animation-name: carousel1;
+}
+
+.carousel picture:nth-child(2) img {
+    animation-name: carousel2;
+}
+
+.carousel picture:nth-child(3) img {
+    animation-name: carousel3;
+}
+
+.carousel picture:nth-child(4) img {
+    animation-name: carousel4;
+}
+
+.carousel picture:nth-child(5) img {
+    animation-name: carousel5;
+}
+
+.carousel picture:nth-child(6) img {
+    animation-name: carousel6;
+}
+
+.carousel picture:nth-child(7) img {
+    animation-name: carousel7;
+}
+	
+.carousel picture:nth-child(8) img {
+    animation-name: carousel8;
+}
+
+@keyframes carousel1 {
+    0%    { opacity: 1; }
+    12.5% { opacity: 1; }
+    25%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel2 {
+    0%    { opacity: 0; }
+    25%   { opacity: 1; }
+    37.5% { opacity: 1; }
+    50%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel3 {
+    0%    { opacity: 0; }
+    50%   { opacity: 1; }
+    62.5% { opacity: 1; }
+    75%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel4 {
+    0%    { opacity: 0; }
+    75%   { opacity: 1; }
+    87.5% { opacity: 1; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel5 {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+    112.5% { opacity: 1; }
+    125%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel6 {
+    0%    { opacity: 0; }
+    125%   { opacity: 1; }
+    137.5% { opacity: 1; }
+    150%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel7 {
+    0%    { opacity: 0; }
+    150%   { opacity: 1; }
+    162.5% { opacity: 1; }
+    175%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+@keyframes carousel8 {
+    0%    { opacity: 0; }
+    175% { opacity: 1; }
+    187.5%  { opacity: 1; }
+    200%  { opacity: 0; }
+}
+
+
+.carousel img {
+    position: absolute;
+	width: 100%;
+	height: auto;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
 /* Ticket form */
 #concert-ticket-form {
     background: #f9f9f9;
