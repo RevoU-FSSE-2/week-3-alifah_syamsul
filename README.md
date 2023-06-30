@@ -24,9 +24,11 @@ The assignment's main objective was to create an enhanced and interactive webpag
 
 ## Advanced Features
 
-1. **Dark and Light modes:** The webpage supports both dark and light modes, improving the user experience based on their preferences. The user's mode preference is saved and persists across refreshes.
+1. **High SEO rating:** This webpage got (a 92 score)[https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fwhimsical-salamander-e8c820.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext] on Google Lighthouse.
 
-2. **HTML & CSS only image carousel:** I implemented an image carousel  in the #Photos section without using JavaScript; I used the CSS's @keyframe for this.
+2. **Dark and Light modes:** The webpage supports both dark and light modes, improving the user experience based on their preferences. The user's mode preference is saved and persists across refreshes.
+
+3. **HTML & CSS only image carousel:** I implemented an image carousel  in the #Photos section without using JavaScript; I used the CSS's @keyframe for this.
 
 ## Instructions for Use
 
