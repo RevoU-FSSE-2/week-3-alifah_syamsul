@@ -126,6 +126,19 @@ main {
     padding: 10px 0;
 }
 
+/* Make the images in image-gallery grayscale, then coloured when hovered over */
+.image-gallery .album-cover {
+    /* convert image to grayscale */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.image-gallery .album-cover:hover {
+    /* remove the grayscale filter on hover */
+    filter: grayscale(0%);
+}
+
+
 /* Videos */
 .grid-container {
     display: grid;
