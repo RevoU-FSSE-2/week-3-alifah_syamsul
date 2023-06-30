@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <a href="#concert-ticket-purchase-form" class="nav-link">Concert Ticket Purchase Form</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#photos" class="nav-link">Photos</a>
+                </li>
             </ul>
             <div class="hamburger"> 
                 <span class="bar"></span>
@@ -45,27 +48,30 @@
     </header>
 
     <main>
+
         <section id="albums">
+
             <h2>Albums</h2>
-            <div class="image-gallery">
+
+            <div class="album-gallery">
                 <figure id="album1">
-                    <img class="album-cover" src="images/Mika_Life-in-Cartoon-Motion_2007_AlbumCover.jpg" alt="The cover of the Life in the Cartoon Motion album (2007) by Mika">
+                    <img class="album-cover" src="images/album-cover_1.jpg" alt="The cover of the Life in the Cartoon Motion album (2007) by Mika">
                     <figcaption class="album-title">Life in Cartoon Motion (2007)</figcaption>
                 </figure>
                 <figure id="album2">
-                    <img class="album-cover" src="images/Mika_The-Boy-Who-Knew-Too-Much_2009_AlbumCover.jpg" alt="The cover of the The Boy Who Knew Too Much album (2009) by Mika">
+                    <img class="album-cover" src="images/album-cover_2.jpg" alt="The cover of the The Boy Who Knew Too Much album (2009) by Mika">
                     <figcaption class="album-title">The Boy Who Knew Too Much (2009)</figcaption>
                 </figure>
                 <figure id="album3">
-                    <img class="album-cover" src="images/Mika_The-Origin-of-Love_2012_AlbumCover.jpg" alt="The cover of the The Origin of Love album (2012) by Mika">
+                    <img class="album-cover" src="images/album-cover_3.jpg" alt="The cover of the The Origin of Love album (2012) by Mika">
                     <figcaption class="album-title">The Origin of Love (2012)</figcaption>
                 </figure>
                 <figure id="album4">
-                    <img class="album-cover" src="images/Mika_No-Place-in-Heaven_2015_AlbumCover.jpg" alt="The cover of the No Place in Heaven album (2015) by Mika">
+                    <img class="album-cover" src="images/album-cover_4.jpg" alt="The cover of the No Place in Heaven album (2015) by Mika">
                     <figcaption class="album-title">No Place in Heaven (2015)</figcaption>
                 </figure>
                 <figure id="album5">
-                    <img class="album-cover" src="images/Mika_My-Name-is-Michael-Holbrook_2019_AlbumCover.jpg" alt="The cover of the My Name is Michael Holbrook album (2019) by Mika">
+                    <img class="album-cover" src="images/album-cover_5.jpg" alt="The cover of the My Name is Michael Holbrook album (2019) by Mika">
                     <figcaption class="album-title">My Name is Michael Holbrook (2019)</figcaption>
                 </figure>
             </div>
@@ -74,7 +80,9 @@
         <div class="grid-wrapper">
 
             <section id="videos">
+
                 <h2>Videos</h2>
+
                 <div class="grid-container">
                     <div class="video-wrapper" id="video1">
                         <div class="video-container" id="video1">
@@ -95,10 +103,13 @@
                         <p class="video-caption">Mika - "Grace Kelly" ft. L'Orchestra Sinfonica e Coro Affinis Consort</p>
                     </div>
                 </div>
+
             </section>
 
             <aside id="trivia">
+
                 <h2>Trivia</h2>
+
                 <ol>
                     <li><b>Multilingual singer:</b> Mika is fluent in English, French, Spanish, and Italian and releases music in these languages.</li>
                     <li><b>Opera training:</b> Mika studied classical music at the Royal College of Music, which is reflected in his wide vocal range.</li>
@@ -106,6 +117,7 @@
                     <li><b>Illustration skills:</b> Mika, an art school graduate, often creates his own album artwork.</li>
                     <li><b>UN ambassador:</b> Mika was made a UNHCR Goodwill Ambassador in 2020, advocating for refugee rights.</li>
                 </ol>
+
             </aside>
 
         </div>
@@ -113,10 +125,12 @@
         <section id="concert-ticket-purchase-form">
 
             <h2>Concert Ticket Purchase Form</h2>
+
             <form id="ticket-form">
 
                 <fieldset>
                     <legend>Personal data</legend>
+
                     <div class="form-field">
                         <label for="name">Full name:</label>
                         <input type="text" id="name" name="name" required>
@@ -130,10 +144,12 @@
                         <input type="range" id="age" name="age" min="18" max="64" oninput="displayAgeValue(this.value)" required>
                         <span id="age-display"></span>
                     </div>
+
                 </fieldset>
 
                 <fieldset>
                     <legend>Ticket purchase details</legend>
+
                     <div class="form-field">
                         <label for="ticket-quantity">Number of tickets (max. 4 per person):</label>
                         <input type="number" id="ticket-quantity" name="quantity" min="1" max="4" required>
@@ -154,6 +170,7 @@
                         <label for="bracelet-colour">Bracelet colour:</label>
                         <input type="color" id="bracelet-colour" name="colour">
                     </div>
+
                 </fieldset>
 
                 <fieldset>
