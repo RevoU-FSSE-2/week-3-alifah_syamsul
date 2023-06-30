@@ -296,7 +296,6 @@ aside a {
     200%  { opacity: 0; }
 }
 
-
 .carousel img {
     position: absolute;
 	width: 100%;
@@ -305,7 +304,6 @@ aside a {
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
-
 
 /* Ticket form */
 #concert-ticket-form {
